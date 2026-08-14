@@ -554,7 +554,3 @@ Those areas are therefore explicitly documented as **portfolio design**, not mis
 → [`Mission Evidence vs Portfolio Design`](docs/mission-evidence.md)
 
 ---
-
-<p align="center">
-  <b>Business Requirements → Architecture → Integration Pattern → Security → API Design → Mapping → Error Handling → Monitoring → Deployment → Evolution</b>
-</p>
