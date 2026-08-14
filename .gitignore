@@ -1,0 +1,13 @@
+# Secrets / local configuration
+.env
+*.secret
+*.pem
+*.key
+credentials.*
+secrets/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
