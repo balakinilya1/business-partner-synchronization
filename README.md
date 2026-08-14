@@ -555,20 +555,6 @@ Those areas are therefore explicitly documented as **portfolio design**, not mis
 
 ---
 
-## 18. Author's Architecture Perspective
-
-This case demonstrates a shift from:
-
-> **“I can build an integration flow.”**
-
-to:
-
-> **“I can design, justify, document and operate an integration solution.”**
-
-The technical implementation is only one part of the solution. The architecture work defines the boundaries, responsibilities, security model, contracts, failure behaviour, observability and evolution path around it.
-
----
-
 <p align="center">
   <b>Business Requirements → Architecture → Integration Pattern → Security → API Design → Mapping → Error Handling → Monitoring → Deployment → Evolution</b>
 </p>
