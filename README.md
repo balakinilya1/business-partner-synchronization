@@ -530,26 +530,31 @@ The target evolution is not “add complexity for its own sake”. Each capabili
 
 ## 17. Source & Evidence
 
-The case is based on the SAP Discovery Center mission **“Synchronize Account Data Between SAP S/4HANA and Third-Party CRM”** and the supplied mission screenshots.
+The case is based on the SAP Discovery Center mission **“Synchronize Account Data Between SAP S/4HANA and Third-Party CRM”**.
 
-The source material supports the following implementation facts:
+The SAP Mission provides the original integration scenario, architecture overview and implementation guidance for synchronizing Business Partner data from SAP S/4HANA to Salesforce through SAP Integration Suite / Cloud Integration.
 
-- SAP S/4HANA is the source.
-- SAP Integration Suite / Cloud Integration is the integration platform.
-- Salesforce is the CRM example.
-- Business Partner data is queried.
-- The flow evaluates returned data.
-- Records are split, transformed and filtered.
-- Salesforce Account creation is performed.
-- A recurring Timer Start is used.
-- Security Material is configured.
-- Salesforce OAuth2 Client Credentials are configured.
-- S/4HANA and Salesforce receiver connectivity is configured.
-- The SAP Mission provides the deployment configuration steps, but the integration was not executed end-to-end in a connected environment because the required S/4HANA and Salesforce credentials were not available.
+The mission covers:
 
-The SAP Mission provides the integration scenario and implementation guidance. The additional architecture artifacts in this repository extend the scenario with production-oriented design considerations such as API design, mapping, error handling, monitoring, deployment and future improvements.
+- SAP S/4HANA as the source system.
+- SAP Integration Suite / Cloud Integration as the integration platform.
+- Salesforce as the target CRM.
+- Scheduled execution using a Timer Start.
+- Business Partner data retrieval.
+- Result evaluation.
+- Record splitting.
+- Data transformation.
+- Data filtering.
+- Salesforce Account creation.
+- Security Material configuration.
+- S/4HANA and Salesforce connection configuration.
+- Deployment configuration steps.
 
-These additional artifacts represent the author's architecture design and are not presented as functionality implemented or validated in the SAP Mission environment.
+The integration was not executed end-to-end in a connected environment because the required S/4HANA and Salesforce credentials and system access were not available.
+
+The additional architecture artifacts in this repository extend the SAP Mission scenario with production-oriented design considerations, including API design, mapping, error handling, monitoring, deployment strategy, testing and future improvements.
+
+These additional artifacts represent architecture design and recommendations and are not presented as functionality implemented or validated in the SAP Mission environment.
 
 → [`Mission Evidence vs Portfolio Design`](docs/mission-evidence.md)
 
