@@ -545,11 +545,11 @@ The source material supports the following implementation facts:
 - Security Material is configured.
 - Salesforce OAuth2 Client Credentials are configured.
 - S/4HANA and Salesforce receiver connectivity is configured.
-- The integration is deployed.
+- The SAP Mission provides the deployment configuration steps, but the integration was not executed end-to-end in a connected environment because the required S/4HANA and Salesforce credentials were not available.
 
-The source does **not** establish complete production API contracts, field-level mapping, SLA/RPO/RTO, enterprise alerting, CI/CD or a complete production error/reprocessing architecture.
+The SAP Mission provides the integration scenario and implementation guidance. The additional architecture artifacts in this repository extend the scenario with production-oriented design considerations such as API design, mapping, error handling, monitoring, deployment and future improvements.
 
-Those areas are therefore explicitly documented as **portfolio design**, not mission evidence. fileciteturn0file0
+These additional artifacts represent the author's architecture design and are not presented as functionality implemented or validated in the SAP Mission environment.
 
 → [`Mission Evidence vs Portfolio Design`](docs/mission-evidence.md)
 
