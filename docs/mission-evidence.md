@@ -1,46 +1,102 @@
 # Mission Evidence vs Portfolio Design
 
-This document prevents accidental overclaiming in the portfolio.
+This document clarifies which elements of this case are based on the SAP Discovery Center mission and which were developed as part of the architecture work for this portfolio.
 
-## Directly supported by the supplied mission material
+## 1. SAP Mission Scope
 
-- Use case: synchronize customer/account data between SAP S/4HANA and a third-party CRM.
-- CRM example: Salesforce.
-- SAP Integration Suite / SAP Cloud Integration is the integration platform.
-- SAP S/4HANA Business Partner data is queried.
-- Processing includes receiving results, checking whether results exist, splitting accounts, transforming to Salesforce format and filtering.
-- Salesforce Account creation is the target operation.
-- The integration is scheduled with a recurring Timer Start.
-- S/4HANA and Salesforce receiver configuration is performed.
-- Security Material is configured in SAP Integration Suite.
-- Salesforce OAuth2 Client Credentials are created with Token Service URL, Client ID and Client Secret.
-- The flow references S/4HANA credential information and Salesforce authentication material.
-- The integration is saved and deployed.
+The case is based on the SAP Discovery Center mission “Synchronize Account Data Between SAP S/4HANA and Third-Party CRM”.
 
-These points are visible in the attached mission screenshots. 
+The mission covers an integration scenario in which Business Partner data is retrieved from SAP S/4HANA, processed in SAP Integration Suite / Cloud Integration, transformed and sent to Salesforce as Account data.
 
-## Added as architecture work for this portfolio
+The mission includesЖ
 
-The following are deliberately recommendations/design artifacts rather than claims about what the mission implemented:
+- SAP S/4HANA as the source system.
+- SAP Integration Suite / Cloud Integration as the integration platform.
+- Salesforce as the CRM system.
+- Recurring Timer Start.
+- Business Partner data retrieval.
+- Result evaluation.
+- Record splitting.
+- Data transformation.
+- Data filtering.
+- Salesforce Account creation.
+- S/4HANA receiver configuration.
+- Salesforce receiver configuration.
+- Security Material configuration.
+- Salesforce OAuth 2.0 Client Credentials configuration.
 
-- detailed business requirements and NFRs;
-- production SLA/KPI targets;
-- exact field-level mapping;
-- canonical data model;
-- idempotency/upsert strategy;
-- bounded retry policy;
-- dead-letter/reprocessing model;
-- enterprise alerting;
-- multi-environment DEV/TEST/PROD promotion;
-- CI/CD;
-- event-driven future architecture;
-- volume/performance strategy;
-- API contract details not shown by the mission.
+## 2. Work Completed in the Mission
 
-## Why this distinction matters
+The integration flow and configuration steps covered by the mission were completed as part of the learning exercise.
 
-The portfolio should demonstrate architecture thinking without implying production implementation where only a learning mission was completed. The strongest presentation is:
+The completed areas include:
 
-> **Implemented in the SAP mission:** the integration scenario and technical configuration.
->
-> **Designed for the portfolio:** the enterprise-level requirements, controls, operational model and evolution path around that scenario.
+| Area | Status |
+|---|:---:|
+| Integration scenario setup | Completed |
+| Timer-based execution configuration | Completed |
+| Business Partner data retrieval | Completed |
+| Result evaluation | Completed |
+| Record splitting | Completed |
+| Transformation to Salesforce format | Completed |
+| Filtering | Completed |
+| Salesforce Account creation flow | Completed |
+| S/4HANA receiver configuration | Completed |
+| Salesforce receiver configuration | Completed |
+| Security Material configuration | Completed |
+| Salesforce OAuth 2.0 Client Credentials configuration | Completed |
+
+## 3. Environment Constraints
+
+The integration was configured according to the mission, but end-to-end execution against live SAP S/4HANA and Salesforce systems could not be validated because the required system credentials and access were not available.
+
+Consequently, live validation of the following was not possible:
+
+- authentication against the actual S/4HANA system;
+- authentication against the actual Salesforce tenant;
+- retrieval of live Business Partner data;
+- transmission of live data to Salesforce;
+- creation of a real Salesforce Account;
+- runtime behaviour under real integration conditions.
+
+The deployment configuration described by the mission was therefore not validated against connected source and target systems.
+
+## 4. Portfolio Architecture Scope
+
+The integration scenario was subsequently developed into a broader architecture case covering the areas required for an enterprise integration solution.
+
+The portfolio adds:
+
+- business requirements and non-functional requirements;
+- solution architecture;
+- integration pattern;
+- security architecture;
+- API design;
+- data-mapping;
+- error handling and recovery;
+- monitoring and operations;
+- deployment strategy;
+- testing strategy;
+- architecture decision record;
+- limitations and future improvement.
+
+These artifacts describe the architectural decisions, design considerations and operational model surrounding the integration scenario.
+
+## 5. Scope Summary
+
+| Dimension | Mission | Portfolio |
+|---|:---:|:---:|
+| Integration scenario | ✓ | ✓ |
+| SAP S/4HANA → Integration Suite → Salesforce flow | ✓ | ✓ |
+| Flow configuration | ✓ | - |
+| Security configuration | ✓ | - |
+| Business requirements | - | ✓ |
+| Solution architecture | - | ✓ |
+| API design | - | ✓ |
+| Mapping strategy | - | ✓ |
+| Error handling | - | ✓ |
+| Monitoring | - | ✓ |
+| Deployment strategy | - | ✓ |
+| Test strategy | - | ✓ |
+
+The result is a complete architecture view built around the integration scenario, combining the implemented integration flow with the surrounding architectural and operational design.
