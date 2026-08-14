@@ -17,7 +17,7 @@ This document prevents accidental overclaiming in the portfolio.
 - The flow references S/4HANA credential information and Salesforce authentication material.
 - The integration is saved and deployed.
 
-These points are visible in the attached mission screenshots. fileciteturn0file0
+These points are visible in the attached mission screenshots. 
 
 ## Added as architecture work for this portfolio
 
