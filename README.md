@@ -168,7 +168,8 @@ and
 | Filtering | ✅ Mission |
 | Salesforce Account creation | ✅ Mission |
 | Security Material configuration | ✅ Mission |
-| Deployment | ✅ Mission |
+| Deployment configuration | ⚠️ Mission guidance / configuration |
+| End-to-end deployment | ❌ Not validated |
 | Detailed business requirements | 🧭 Portfolio design |
 | Production API contract | 🧭 Portfolio design |
 | Field-level mapping specification | 🧭 Portfolio design |
