@@ -8,13 +8,6 @@
 >
 > The mission provides the implemented integration scenario. This repository extends it into an **Integration Architect case study** covering requirements, architecture, integration patterns, security, API design, mapping, error handling, monitoring, deployment and future evolution.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/SAP-Integration%20Suite-0FAAFF?style=for-the-badge&logo=sap&logoColor=white" alt="SAP Integration Suite">
-  <img src="https://img.shields.io/badge/Architecture-Portfolio-6E40C9?style=for-the-badge" alt="Architecture Portfolio">
-  <img src="https://img.shields.io/badge/Pattern-Scheduled%20Replication-2EA44F?style=for-the-badge" alt="Scheduled Replication">
-  <img src="https://img.shields.io/badge/Target-Salesforce-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white" alt="Salesforce">
-</p>
-
 ---
 
 ## 1. Executive Summary
