@@ -8,7 +8,7 @@ The case is based on the SAP Discovery Center mission “Synchronize Account Dat
 
 The mission covers an integration scenario in which Business Partner data is retrieved from SAP S/4HANA, processed in SAP Integration Suite / Cloud Integration, transformed and sent to Salesforce as Account data.
 
-The mission includesЖ
+The mission includes:
 
 - SAP S/4HANA as the source system.
 - SAP Integration Suite / Cloud Integration as the integration platform.
